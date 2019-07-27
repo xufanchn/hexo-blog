@@ -229,6 +229,149 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/小白成长篇-Hexo-github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/27/小白成长篇-Hexo-github/" itemprop="url">小白成长篇——Hexo+github搭建博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-27T18:43:17+08:00">
+                2019-07-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="小白成长篇——Hexo-github搭建自己的第一个博客"><a href="#小白成长篇——Hexo-github搭建自己的第一个博客" class="headerlink" title="小白成长篇——Hexo+github搭建自己的第一个博客"></a>小白成长篇——Hexo+github搭建自己的第一个博客</h2><blockquote>
+<p>作为一只Java小白，经常在自学的道路上遇到很多问题，tomcat啦，maven啦，各种环境配置啦。。每当这时候我会谷歌百度，然后经常能够在一些博客论坛上找到答案。由此，我亦想搭建一个博客，用来记录一下自己学习的整个过程，以及学习中遇到的一些问题，以便为后事之师。</p>
+</blockquote>
+<p><img src="C:%5CUsers%5CXuFan%5CDesktop%5C%E6%96%87%E6%A1%A3%5Celse%5C%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B0%8F.jpg" alt></p>
+<h3 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h3><ul>
+<li>安装Node.js</li>
+<li>安装git</li>
+<li>安装配置Hexo</li>
+<li>Hexo+github</li>
+<li>编写发布博客</li>
+<li>高级玩法：域名绑定</li>
+</ul>
+<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><blockquote>
+<p>​        Node.js 是一个基于 Chrome V8 引擎的 <a href="https://baike.baidu.com/item/JavaScript/321142" target="_blank" rel="noopener">JavaScript</a> 运行环境。 Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型。</p>
+<p>​        Node 是一个让 JavaScript 运行在<a href="https://baike.baidu.com/item/服务端/6492316" target="_blank" rel="noopener">服务端</a>的开发平台，它让 JavaScript 成为与<a href="https://baike.baidu.com/item/PHP/9337" target="_blank" rel="noopener">PHP</a>、<a href="https://baike.baidu.com/item/Python/407313" target="_blank" rel="noopener">Python</a>、<a href="https://baike.baidu.com/item/Perl/851577" target="_blank" rel="noopener">Perl</a>、<a href="https://baike.baidu.com/item/Ruby/11419" target="_blank" rel="noopener">Ruby</a> 等服务端语言平起平坐的<a href="https://baike.baidu.com/item/脚本语言/1379708" target="_blank" rel="noopener">脚本语言</a>。 [2]  发布于2009年5月，由Ryan Dahl开发，实质是对Chrome V8引擎进行了封装。</p>
+<p>​        Node对一些特殊用例进行优化，提供替代的<a href="https://baike.baidu.com/item/API/10154" target="_blank" rel="noopener">API</a>，使得V8在非浏览器环境下运行得更好。V8引擎执行Javascript的速度非常快，性能非常好。Node是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node 使用<a href="https://baike.baidu.com/item/事件驱动/9597519" target="_blank" rel="noopener">事件驱动</a>， 非阻塞<a href="https://baike.baidu.com/item/I%2FO/84718" target="_blank" rel="noopener">I/O</a> 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p>
+</blockquote>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><blockquote>
+<p>Git(读音为/gɪt/。)是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 [1]  Git 是 [Linus Torvalds](<a href="https://baike.baidu.com/item/Linus" target="_blank" rel="noopener">https://baike.baidu.com/item/Linus</a> Torvalds/9336769) 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+</blockquote>
+<h4 id="安装配置Hexo"><a href="#安装配置Hexo" class="headerlink" title="安装配置Hexo"></a>安装配置Hexo</h4><p>参考Hexo官方文档。<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></p>
+<h4 id="编写发布博客"><a href="#编写发布博客" class="headerlink" title="编写发布博客"></a>编写发布博客</h4><p>第一篇博客，还不太知道怎么去写，所以先大致引用百度百科介绍。希望自己的写博客水平能渐渐提高。</p>
+<h4 id="高级玩法"><a href="#高级玩法" class="headerlink" title="高级玩法"></a>高级玩法</h4><p>目前的博客是利用轻量框架Hexo+github来搭建的，之后会购买服务器和域名，尝试一些更高级的玩法。希望自己能够在此过程中学习到一些新的知识。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>还是希望，自己能够总结自己学习过的东西，整理出来，写成博客，既能锻炼自己的逻辑，也能加强对知识的理解，并加强记忆。这篇小白成长篇之Hexo博客搭建，这写到这里吧。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,7 +537,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -402,6 +545,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
